@@ -93,6 +93,7 @@ public class AccessController : Controller
             new ClaimsPrincipal(claimsIdentity),
             properties
         );
+        
         return RedirectToAction("Index","Home");
     }
 
