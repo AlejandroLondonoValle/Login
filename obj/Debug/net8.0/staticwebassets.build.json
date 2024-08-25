@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jk9I9uz2V/xbv3DRZprcGuQ76QiGY2KzF/ZUeTdHbbI=",
+  "Hash": "UKzBM767PsKlXauisdPsp9tGPQJO/gudrGR8cat6dK4=",
   "Source": "LoginSistem",
   "BasePath": "_content/LoginSistem",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\londo\\Desktop\\Proyectos Riwi\\Net\\Login\\LoginSistem\\wwwroot\\img\\Alejandro.png",
+      "SourceId": "LoginSistem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\londo\\Desktop\\Proyectos Riwi\\Net\\Login\\LoginSistem\\wwwroot\\",
+      "BasePath": "_content/LoginSistem",
+      "RelativePath": "img/Alejandro.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Alejandro.png"
     },
     {
       "Identity": "C:\\Users\\londo\\Desktop\\Proyectos Riwi\\Net\\Login\\LoginSistem\\wwwroot\\js\\site.js",

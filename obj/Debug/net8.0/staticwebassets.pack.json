@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\londo\\Desktop\\Proyectos Riwi\\Net\\Login\\LoginSistem\\wwwroot\\img\\Alejandro.png",
+      "PackagePath": "staticwebassets\\img\\Alejandro.png"
+    },
+    {
       "Id": "C:\\Users\\londo\\Desktop\\Proyectos Riwi\\Net\\Login\\LoginSistem\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
