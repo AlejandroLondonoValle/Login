@@ -53,5 +53,13 @@ public class AccessController : Controller
         return View();
     }
 
+    [HttpGet]
+    public IActionResult Login()
+    {
+        return View();
+    }
+
+    
+
 
 }

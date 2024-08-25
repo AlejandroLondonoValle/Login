@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\londo\Desktop\Proyectos Riwi\Net\Login\LoginSistem
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/londo/Desktop/Proyectos Riwi/Net/Login/LoginSistem/Views/Access/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/londo/Desktop/Proyectos Riwi/Net/Login/LoginSistem/Views/Access/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
