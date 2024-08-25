@@ -31,7 +31,7 @@ public class AccessController : Controller
     {
         if(modelo.Password != modelo.ConfirmPassword)
         {
-            ViewData["Mensaje"]="Las Constraseñas no coinciden";
+            ViewData["Mensaje"]="Las Contraseñas no coinciden";
             return View();
         }
 
