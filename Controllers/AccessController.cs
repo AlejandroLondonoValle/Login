@@ -59,6 +59,22 @@ public class AccessController : Controller
         return View();
     }
 
+    [HttpPost]
+    public async Task<IActionResult> Login(LoginVM modelo)
+    {
+        User user_found = await _appDbContext.Users
+                            .Where(u => 
+                             u.Email == modelo.Email && 
+                             u.Password == modelo.Password).FirstOrDefaultAsync();
+
+        if(user_found == null)
+        {
+            ViewData["Mensaje"]="El Usuario no existe, puede que el Correo o la Contraseña  sean Incorrectos";
+            return View();
+        }
+        return RedirectToAction("Index","Home");
+    }
+
     
 
 
