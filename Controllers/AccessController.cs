@@ -9,6 +9,9 @@ using Microsoft.EntityFrameworkCore;
 using LoginSistem.Models;
 using LoginSistem.Data;
 using LoginSistem.ViewModels;
+using System.Security.Claims; //Guarda la informacion del Usuario
+using Microsoft.AspNetCore.Authentication; //Permite la autenticacion de usuarios
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 
 namespace LoginSistem.Controllers;
@@ -72,6 +75,24 @@ public class AccessController : Controller
             ViewData["Mensaje"]="El Usuario no existe, puede que el Correo o la Contraseña  sean Incorrectos";
             return View();
         }
+
+        List<Claim> claims = new List<Claim>()
+        {
+            new Claim(ClaimTypes.Name, user_found.FullName)
+            //Agregar mas claims si es necesario
+        };
+
+        ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims,CookieAuthenticationDefaults.AuthenticationScheme);
+        AuthenticationProperties properties = new AuthenticationProperties()
+        {
+            AllowRefresh =true
+        };
+
+        await HttpContext.SignInAsync(
+            CookieAuthenticationDefaults.AuthenticationScheme,
+            new ClaimsPrincipal(claimsIdentity),
+            properties
+        );
         return RedirectToAction("Index","Home");
     }
 
