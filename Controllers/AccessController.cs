@@ -47,9 +47,9 @@ public class AccessController : Controller
 
         if(user.IdUser != 0)
         {
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Login","Access");
         }
-
+        ViewData["Mensaje"]="Error Fatal, No se pudo crear el Usuario";
         return View();
     }
 
