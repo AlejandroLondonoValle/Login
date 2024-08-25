@@ -59,6 +59,7 @@ public class AccessController : Controller
     [HttpGet]
     public IActionResult Login()
     {
+        if(User.Identity!.IsAuthenticated) return RedirectToAction("Index","Home");
         return View();
     }
 
@@ -93,7 +94,7 @@ public class AccessController : Controller
             new ClaimsPrincipal(claimsIdentity),
             properties
         );
-        
+
         return RedirectToAction("Index","Home");
     }
 
