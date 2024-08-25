@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace LoginSistem.Controllers;
 
+[Authorize] //Esta anotacion habilita la accion solo para usuarios autenticados, en este caso inhibe todo dentro de la clase home controller pero se puede ihibir solo un metodo, si asi es necesario
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
