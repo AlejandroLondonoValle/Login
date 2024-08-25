@@ -12,6 +12,14 @@ builder.Services.AddDbContext<AppDBContext>(options=>
     options.UseMySql(builder.Configuration.GetConnectionString("conexion_db_Login"),
     ServerVersion.Parse("8.0.2-mysql")));
 
+// Configuracion de la autenticacion
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+   .AddCookie(options =>
+    {
+        options.LoginPath = "/Access/Login";
+        options.ExpireTimeSpan= TimeSpan.FromMinutes(30); //Tiempo de duracion de la sesion del usuario
+    });
 
 var app = builder.Build();
 
@@ -27,6 +35,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication(); //Indica que debe de usar la Autenticacion que ya configuramos
 
 app.UseAuthorization();
 
